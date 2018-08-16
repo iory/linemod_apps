@@ -21,14 +21,12 @@ include_directories(${OPENCV_INCLUDE_DIRS})
 link_directories(${OPENCV_LIBRARY_DIRS})
 
 catkin_package(
- INCLUDE_DIRS include
  LIBRARIES linemod_3dpose_estimator
  CATKIN_DEPENDS roscpp rospy std_msgs message_runtime
  DEPENDS system_lib
 )
 
 include_directories(
-include
   ${catkin_INCLUDE_DIRS}
 )
 
